@@ -1,0 +1,134 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cocopelli Surf School — Surf in Gokarna, India</title>
+<meta name="description" content="Gokarna's first surf school, est. 2010. Beginner lessons, board rentals, surf trips and homestay with certified instructor Sandeep Samuel.">
+<style>
+:root{--bg:#fbf6ec;--surf:#fff;--ink:#12303a;--mut:#56707a;--acc:#e8663a;--sea:#0e7c86;--deep:#0a3d4a;--line:#e6dcc9}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1d22;--surf:#122a31;--ink:#f3ede0;--mut:#9db5bb;--acc:#ff7a4a;--sea:#3cc0c9;--deep:#071317;--line:#23424b;color-scheme:dark}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.15;margin:0 0 .5em}
+a{color:inherit;text-decoration:none}
+.w{max-width:1100px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+nav{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font:700 1.3rem Georgia,serif}.logo b{color:var(--acc)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:.92rem}
+.btn{display:inline-block;background:var(--acc);color:#fff;padding:12px 22px;border-radius:99px;font-weight:600;border:2px solid var(--acc)}
+.btn.o{background:transparent;color:inherit;border-color:currentColor}
+nav .btn{padding:8px 16px;font-size:.9rem}
+.hero{position:relative;color:#fff;padding:110px 0 90px;background:linear-gradient(180deg,#f7a35c 0%,#e8663a 30%,#0e7c86 62%,#0a3d4a 100%);overflow:hidden}
+.hero svg{position:absolute;left:0;bottom:-2px;width:100%;height:120px}
+.hero .w{position:relative}
+.eye{letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;font-weight:700;opacity:.9}
+.hero h1{font-size:clamp(2.6rem,8vw,5rem);margin:.2em 0}
+.hero p{max-width:520px;font-size:1.1rem}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.hero .btn.o{color:#fff}
+.strip{background:var(--deep);color:#f3ede0;padding:26px 0}
+.strip .w{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:18px;text-align:center}
+.strip b{display:block;font:700 1.5rem Georgia,serif;color:#ffb27a}.strip span{font-size:.85rem;opacity:.85}
+.hd{text-align:center;max-width:620px;margin:0 auto 38px}.hd .eye{color:var(--acc)}.hd h2{font-size:clamp(1.8rem,5vw,2.6rem)}.hd p{color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card .ic{font-size:1.8rem}.card h3{font-size:1.25rem;margin:.3em 0}.card p{color:var(--mut);margin:.3em 0 1em;font-size:.95rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}.tags i{font-style:normal;font-size:.75rem;background:var(--bg);border:1px solid var(--line);padding:3px 10px;border-radius:99px}
+.card a.l{color:var(--acc);font-weight:700}
+.alt{background:var(--surf)}.alt .card{background:var(--bg)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.step{text-align:center;padding:10px}.step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:52px;height:52px;margin:0 auto 12px;border-radius:50%;background:var(--sea);color:#fff;font:700 1.3rem Georgia,serif}
+.step p{color:var(--mut);margin:0;font-size:.95rem}
+details{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-bottom:10px;max-width:760px;margin-inline:auto}
+summary{cursor:pointer;font-weight:700}details p{color:var(--mut);margin:.6em 0 0}
+.coach{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+.pic{aspect-ratio:4/5;border-radius:22px;background:linear-gradient(160deg,#f7a35c,#0e7c86);display:grid;place-items:center;font-size:5rem}
+.coach li{margin:6px 0}
+.loc{background:var(--deep);color:#f3ede0}.loc .hd p{color:#b7cdd2}.loc .hd .eye{color:#ffb27a}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}.chips span{border:1px solid #2c5560;border-radius:99px;padding:8px 16px;font-size:.92rem}
+.final{text-align:center;background:linear-gradient(135deg,var(--acc),#f7a35c);color:#fff}.final .btn{background:#fff;color:#c34a1f;border-color:#fff}.final h2{font-size:clamp(1.9rem,5vw,3rem)}
+footer{padding:36px 0;font-size:.9rem;color:var(--mut)}footer .w{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}footer a{margin-right:14px}
+@media(max-width:760px){nav ul{display:none}.coach{grid-template-columns:1fr}section{padding:54px 0}.pic{aspect-ratio:16/10}}
+</style>
+</head>
+<body>
+<nav><div class="w"><a class="logo" href="#top">Coco<b>pelli</b></a>
+<ul><li><a href="#experiences">Lessons</a></li><li><a href="#why">Why Us</a></li><li><a href="#coach">Sandeep</a></li><li><a href="#gokarna">Gokarna</a></li><li><a href="#faq">FAQ</a></li></ul>
+<a class="btn wa" href="#">Book Now</a></div></nav>
+
+<header class="hero" id="top"><div class="w">
+<div class="eye">🌴 Gokarna · Karnataka · India</div>
+<h1>Never Stop<br>Surfing.</h1>
+<p>Learn to surf at Gokarna's first surf school — taught by a certified international instructor since 2010.</p>
+<div class="cta"><a class="btn wa" href="#">Check Availability</a><a class="btn o" href="#experiences">Explore Lessons</a></div></div>
+<svg viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0 60 C200 10 400 110 600 60 S1000 10 1200 60 V120 H0Z" fill="var(--bg)"/></svg></header>
+
+<div class="strip"><div class="w"><div><b>Since 2010</b><span>First surf school in Gokarna</span></div><div><b>Oct – May</b><span>Best season for beginners</span></div><div><b>ISA &amp; SFI</b><span>Recognised school</span></div><div><b>1-on-1</b><span>Or very small groups</span></div></div></div>
+
+<section id="experiences"><div class="w">
+<div class="hd"><div class="eye">Pick Your Session</div><h2>Choose Your Lesson</h2><p>From a first taste of the ocean to your first turns on green waves.</p></div>
+<div class="grid">
+<div class="card"><div class="ic">🏄</div><h3>Just To Try</h3><p>One session to see if you're a natural. Fun, relaxed, no pressure.</p><div class="tags"><i>⏱ 1.5–2 hrs</i><i>👍 Beginners</i></div><a class="l wa" href="#">Book a Session →</a></div>
+<div class="card"><div class="ic">🌊</div><h3>Beginner Course</h3><p>3 days, one session a day. Boards, safety, paddling, wave catching and standing up — with a standing guarantee.</p><div class="tags"><i>⏱ 3 days</i><i>👍 Beginners</i></div><a class="l wa" href="#">Book the Course →</a></div>
+<div class="card"><div class="ic">🚀</div><h3>Advanced Course</h3><p>6 days. Mid-size waves, board control, first turns, timing and take-offs on small green waves.</p><div class="tags"><i>⏱ 6 days</i><i>👍 Intermediate</i></div><a class="l wa" href="#">Book the Course →</a></div>
+<div class="card"><div class="ic">🎒</div><h3>Surf Trips &amp; Rentals</h3><p>Hidden-coast surf trips, long &amp; short boards, bodyboards, wetsuits, ding repairs, kayaking, and board buy / sell / exchange.</p><div class="tags"><i>⏱ Flexible</i><i>👍 All levels</i></div><a class="l wa" href="#">Ask Us →</a></div>
+</div></div></section>
+
+<section id="why" class="alt"><div class="w">
+<div class="hd"><div class="eye">You're In Safe Hands</div><h2>Why Choose Cocopelli</h2></div>
+<div class="grid">
+<div class="card"><div class="ic">🛟</div><h3>Safety First</h3><p>Technique and safety briefing before every first paddle-out.</p></div>
+<div class="card"><div class="ic">🏄</div><h3>Beginners &amp; Non-Swimmers</h3><p>Never surfed or can't swim? We teach you step by step.</p></div>
+<div class="card"><div class="ic">🏅</div><h3>Certified Instructor</h3><p>Internationally certified, recognised by ISA and the Surfing Federation of India.</p></div>
+<div class="card"><div class="ic">👥</div><h3>Very Small Groups</h3><p>Or one-on-one — more attention, more waves.</p></div>
+<div class="card"><div class="ic">🏖️</div><h3>Gentle Beach Break</h3><p>Gokarna Main Beach: clean blue water, light current.</p></div>
+<div class="card"><div class="ic">🏡</div><h3>Homestay</h3><p>Stay with us right by the surf.</p></div>
+</div></div></section>
+
+<section><div class="w">
+<div class="hd"><div class="eye">Simple As A Sunset</div><h2>Four Steps To Your First Wave</h2></div>
+<div class="steps">
+<div class="step"><h3>Choose</h3><p>Pick a lesson or course.</p></div>
+<div class="step"><h3>Message Us</h3><p>Share your date and group size on WhatsApp.</p></div>
+<div class="step"><h3>Meet At The Beach</h3><p>We provide boards and a safety briefing.</p></div>
+<div class="step"><h3>Ride</h3><p>Catch that first wave.</p></div>
+</div>
+<div class="cta" style="justify-content:center"><a class="btn wa" href="#">Check Availability</a></div></div></section>
+
+<section id="coach" class="alt"><div class="w coach">
+<div class="pic" role="img" aria-label="Surfer">🏄‍♂️</div>
+<div><div class="eye" style="color:var(--acc)">Your Instructor</div><h2>Meet Sandeep Samuel</h2>
+<p>Founder of Cocopelli and one of only two certified international level 3 judges in India. Sandeep trains absolute beginners, non-swimmers and intermediate surfers heading for advanced level.</p>
+<ul><li>✔ Internationally certified surf instructor</li><li>✔ Recognised by ISA &amp; Surfing Federation of India</li><li>✔ Teaching in Gokarna since 2010</li></ul></div></div></section>
+
+<section id="faq"><div class="w">
+<div class="hd"><div class="eye">Good To Know</div><h2>Questions, Answered</h2></div>
+<details><summary>Do I need any experience?</summary><p>No. We teach complete beginners and non-swimmers, starting with technique and safety on the sand.</p></details>
+<details><summary>Best time to visit?</summary><p>October to May is ideal for beginners. Before October and after May (monsoon) can be challenging.</p></details>
+<details><summary>How big are the groups?</summary><p>Very small groups or private one-on-one lessons.</p></details>
+<details><summary>Can I rent or buy a board?</summary><p>Yes — long boards, short boards, bodyboards, wetsuits, plus buying, selling, exchange and ding repairs.</p></details>
+<details><summary>Do you offer surf trips?</summary><p>Yes, along India's hidden coastline. Let us know in advance.</p></details>
+</div></section>
+
+<section id="gokarna" class="loc"><div class="w">
+<div class="hd"><div class="eye">Location</div><h2>Gokarna: India's Surf Town</h2><p>Warm water, forgiving waves and a laid-back coast on India's west coast.</p></div>
+<div class="chips"><span>🌊 Beginner breaks</span><span>🏝️ Main Beach</span><span>🌅 Golden sunsets</span><span>🚣 Kayaking</span><span>🏡 Homestay</span></div></div></section>
+
+<section class="final"><div class="w"><h2>Your Next Adventure Starts With One Wave.</h2><p>Tell us when you're coming. We'll handle the rest.</p><a class="btn wa" href="#">Start Your Adventure</a></div></section>
+
+<footer><div class="w"><div><b>Cocopelli Surf School &amp; Homestay</b><br>Gokarna, Karnataka, India · Est. 2010</div>
+<div><a href="#experiences">Lessons</a><a href="#faq">FAQ</a><a class="wa" href="#">WhatsApp</a><a href="#">Instagram</a></div></div></footer>
+
+<script>
+// Replace with your WhatsApp number (country code, no + or spaces)
+var WA="91XXXXXXXXXX";
+var msg="Hi Cocopelli! I'd like to check availability.\n\nLesson:\nPreferred date:\nNumber of guests:\n\nThank you!";
+document.querySelectorAll("a.wa").forEach(function(a){a.href="https://wa.me/"+WA+"?text="+encodeURIComponent(msg)});
+</script>
+</body>
+</html>
+```
